@@ -26,13 +26,6 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-          <stringProp name="BeanShellSampler.query">props.put(&quot;throughput&quot;, &quot;600&quot;);</stringProp>
-          <stringProp name="BeanShellSampler.filename"></stringProp>
-          <stringProp name="BeanShellSampler.parameters"></stringProp>
-          <boolProp name="BeanShellSampler.resetInterpreter">true</boolProp>
-        </BeanShellSampler>
-        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -61,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-            <intProp name="calcMode">2</intProp>
+            <intProp name="calcMode">4</intProp>
             <stringProp name="throughput">${__P(throughput)}</stringProp>
           </ConstantThroughputTimer>
           <hashTree/>
@@ -75,6 +68,16 @@
             <boolProp name="stopThread">false</boolProp>
             <stringProp name="variableNames">catagory, bodydata</stringProp>
           </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="仅一次控制器" enabled="true"/>
+        <hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">props.put(&quot;throughput&quot;, &quot;1000&quot;);</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
           <hashTree/>
         </hashTree>
       </hashTree>
