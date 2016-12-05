@@ -154,7 +154,7 @@
           </ResultCollector>
           <hashTree/>
           <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-            <intProp name="calcMode">0</intProp>
+            <intProp name="calcMode">4</intProp>
             <stringProp name="throughput">${__P(throughput)}</stringProp>
           </ConstantThroughputTimer>
           <hashTree/>
