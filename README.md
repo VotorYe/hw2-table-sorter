@@ -29,7 +29,7 @@
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="仅一次控制器" enabled="true"/>
         <hashTree>
           <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-            <stringProp name="BeanShellSampler.query">props.put(&quot;throughput&quot;, &quot;30000&quot;);</stringProp>
+            <stringProp name="BeanShellSampler.query">props.put(&quot;throughput&quot;, &quot;300&quot;);</stringProp>
             <stringProp name="BeanShellSampler.filename"></stringProp>
             <stringProp name="BeanShellSampler.parameters"></stringProp>
             <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
@@ -47,7 +47,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">cpu-cpu-cds-cpu-content-distribute-service_1-1-15-3.jpaas.nj02-nj00</stringProp>
+          <stringProp name="HTTPSampler.domain">cpu-content-distribute-service_1-1-16-4.jpaas-nj00.baidu.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
